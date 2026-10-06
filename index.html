@@ -1,0 +1,834 @@
+<!DOCTYPE html><html lang="ms" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Portal Kaunseling Inhaler Pediatrik | Hospital Tunku Azizah (HTA)</title>
+<meta content="Portal panduan teknik inhaler dan spacer untuk pesakit pediatrik Jabatan Kecemasan Hospital Tunku Azizah (HTA). Tonton video, baca risalah teknik, fahami mitos vs fakta, dan tempah sesi kaunseling maya percuma bersama pegawai farmasi." name="description">
+<!-- Tailwind CSS via allowlisted CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<style>
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      scroll-behavior: smooth;
+      -webkit-tap-highlight-color: transparent;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, #026398 0%, #007bb9 50%, #0369a1 100%);
+    }
+    .card-glass {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+    }
+    .tab-btn.active {
+      background-color: #006194;
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 97, 148, 0.25);
+    }
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    /* Section display animations */
+    .portal-section {
+      display: none;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+    .portal-section.active {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Section pill button active state */
+    .sec-nav-btn.active {
+      background-color: #006194;
+      color: #ffffff;
+      border-color: #006194;
+      box-shadow: 0 4px 12px rgba(0, 97, 148, 0.28);
+    }
+    .sec-nav-btn.active .icon-box {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+    }
+    /* Bottom bar button active state */
+    .b-nav-item.active {
+      color: #006194;
+    }
+    .b-nav-item.active .b-nav-icon {
+      background-color: #e2e7ff;
+      color: #006194;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased pb-24 selection:bg-sky-500 selection:text-white">
+<!-- TOP EMERGENCY ADVISORY BAR -->
+<aside aria-label="Notis Kecemasan" class="bg-rose-700 text-white text-xs px-3.5 py-2 font-medium shadow-sm flex items-center justify-between sticky top-0 z-50">
+<div class="flex items-center gap-2 w-full justify-between max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center justify-center bg-rose-800 text-rose-100 rounded-full w-5 h-5 text-[11px] font-bold shrink-0">!</span>
+<span class="text-[11px] leading-tight"><strong>KECEMASAN:</strong> Sesak nafas teruk? Bawa segera ke <strong>Jabatan Kecemasan HTA!</strong></span>
+</div>
+<button class="underline text-rose-200 hover:text-white text-[11px] shrink-0 font-bold whitespace-nowrap focus:outline-none" onclick="switchPortalSection('sec-tanda-bahaya')">Tanda Bahaya →</button>
+</div>
+</aside>
+<!-- NAVIGATION HEADER -->
+<header class="bg-white border-b border-slate-200 sticky top-9 z-40 shadow-sm backdrop-blur-md bg-white/95">
+<div class="max-w-7xl mx-auto px-4 py-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5 cursor-pointer" onclick="switchPortalSection('sec-tempah')">
+<div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-sky-600 to-teal-500 flex items-center justify-center text-white font-black text-sm shadow shadow-sky-500/20 shrink-0">HTA</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="text-[10px] font-bold uppercase tracking-wider text-sky-700 bg-sky-50 px-1.5 py-0.5 rounded border border-sky-100">ED &amp; Farmasi</span>
+</div>
+<h1 class="text-xs font-black text-slate-900 tracking-tight leading-tight mt-0.5">Inhaler Pediatrik HTA</h1>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<a class="bg-sky-600 hover:bg-sky-700 text-white text-[11px] font-bold px-3 py-1.5 rounded-lg shadow-sm flex items-center gap-1 transition" href="https://docs.google.com/forms/d/e/1FAIpQLSdbc_V0vNJGwOBjQc99oGPHtiqCZVSrxpMwy13WyE7a8-4Cvw/viewform?usp=header" rel="noopener noreferrer" target="_blank"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span class="">Daftar</span></a>
+<button aria-label="Buka Maklumat" class="p-1.5 text-slate-700 hover:text-slate-900 rounded-lg bg-slate-100 hover:bg-slate-200 transition" onclick="switchPortalSection('sec-maklumat')">
+<span class="material-symbols-outlined text-[18px] block">info</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- HERO SECTION -->
+<section class="relative overflow-hidden hero-gradient text-white pt-6 pb-6">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+<div class="space-y-4 text-center lg:text-left">
+<div class="inline-flex items-center gap-1.5 bg-white/15 backdrop-blur-md text-sky-100 text-xs font-medium px-3 py-1 rounded-full border border-white/20">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          Projek Jabatan Kecemasan &amp; Farmasi HTA
+        </div>
+<h1 class="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight leading-tight">
+          Nafas yang Lega, <span class="text-amber-300">Langkah yang Ceria</span> untuk Si Kecil.
+        </h1>
+<p class="text-xs sm:text-sm text-sky-100 leading-relaxed max-w-xl mx-auto lg:mx-0">
+          Baru dibekalkan ubat sedut di Jabatan Kecemasan Hospital Tunku Azizah selepas waktu pejabat? Pastikan ubat disedut dengan teknik yang betul agar sampai ke paru-paru anda dengan berkesan.</p>
+<!-- Trust Stats Badges -->
+<div class="grid grid-cols-3 gap-2 pt-2 border-t border-white/15 max-w-md mx-auto lg:mx-0 text-center">
+<div class="bg-white/10 p-2 rounded-xl backdrop-blur-sm">
+<div class="text-base sm:text-lg font-black text-white">1-ke-1</div>
+<div class="text-[10px] text-sky-100 leading-tight">Sesi Maya Farmasi</div>
+</div>
+<div class="bg-white/10 p-2 rounded-xl backdrop-blur-sm">
+<div class="text-base sm:text-lg font-black text-amber-300">5-6 Nafas</div>
+<div class="text-[10px] text-sky-100 leading-tight">Teknik Tidal</div>
+</div>
+<div class="bg-white/10 p-2 rounded-xl backdrop-blur-sm">
+<div class="text-base sm:text-lg font-black text-white">80%</div>
+<div class="text-[10px] text-sky-100 leading-tight">Lebih Berkesan</div>
+</div>
+</div>
+<!-- 4 Langkah Pantas Mini Hub -->
+<div class="pt-2">
+<div class="bg-white/95 text-slate-800 rounded-2xl p-3.5 shadow-lg border border-white/30 text-left">
+<div class="flex items-center justify-between pb-2 mb-2 border-b border-slate-100">
+<span class="text-[10px] font-extrabold uppercase tracking-wider text-sky-700 bg-sky-50 px-2 py-0.5 rounded">4 Tindakan Pantas Pesakit</span>
+<span class="text-[11px] text-slate-500 font-medium"><br></span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+<a class="flex items-center gap-2 p-2 rounded-xl border border-slate-200 hover:border-sky-300 hover:bg-sky-50/60 transition text-left group" href="https://docs.google.com/forms/d/e/1FAIpQLSdbc_V0vNJGwOBjQc99oGPHtiqCZVSrxpMwy13WyE7a8-4Cvw/viewform?usp=header" rel="noopener noreferrer" target="_blank"><span class="w-6 h-6 rounded-md bg-indigo-600 text-white font-bold text-xs flex items-center justify-center shrink-0">1</span><span class="text-xs font-bold text-slate-800 group-hover:text-indigo-600 leading-tight">Borang Daftar</span></a>
+<button class="flex items-center gap-2 p-2 rounded-xl border border-amber-200 bg-amber-50/50 hover:bg-amber-100/60 transition text-left group" onclick="switchPortalSection('sec-tempah', 'focus-slot')">
+<span class="w-6 h-6 rounded-md bg-amber-500 text-white font-bold text-xs flex items-center justify-center shrink-0">2</span>
+<span class="text-xs font-bold text-slate-800 group-hover:text-amber-700 leading-tight">Slot Temu Janji</span>
+</button>
+<button class="flex items-center gap-2 p-2 rounded-xl border border-slate-200 hover:border-sky-300 hover:bg-sky-50/60 transition text-left group" onclick="switchPortalSection('sec-video')">
+<span class="w-6 h-6 rounded-md bg-sky-600 text-white font-bold text-xs flex items-center justify-center shrink-0">3</span>
+<span class="text-xs font-bold text-slate-800 group-hover:text-sky-700 leading-tight">Video Teknik</span>
+</button>
+<button class="flex items-center gap-2 p-2 rounded-xl border border-slate-200 hover:border-teal-300 hover:bg-teal-50/60 transition text-left group" onclick="switchPortalSection('sec-panduan')">
+<span class="w-6 h-6 rounded-md bg-teal-600 text-white font-bold text-xs flex items-center justify-center shrink-0">4</span>
+<span class="text-xs font-bold text-slate-800 group-hover:text-teal-700 leading-tight">Risalah Interaktif</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- STICKY INTERACTIVE SECTION NAVIGATOR (HORIZONTAL SCROLL BAR) -->
+<div class="sticky top-20 z-30 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm py-2 px-3">
+<div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 overflow-x-auto hide-scrollbar py-0.5 w-full">
+<!-- 1. Tempah Kaunseling -->
+<button class="sec-nav-btn flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold border border-slate-200 text-slate-700 bg-white hover:bg-slate-50 shrink-0 transition" id="nav-sec-tempah" onclick="switchPortalSection('sec-tempah')">
+<span class="text-sm">🗓️</span>
+<span class="">Kaunseling Maya</span>
+</button>
+<!-- 2. Video Tutorial -->
+<button class="sec-nav-btn flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold border border-slate-200 text-slate-700 bg-white hover:bg-slate-50 shrink-0 transition" id="nav-sec-video" onclick="switchPortalSection('sec-video')">
+<span class="text-sm">📹</span>
+<span class="">Video Teknik</span>
+</button>
+<!-- 3. Risalah Inhaler -->
+<button class="sec-nav-btn flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold border border-slate-200 text-slate-700 bg-white hover:bg-slate-50 shrink-0 transition" id="nav-sec-panduan" onclick="switchPortalSection('sec-panduan')">
+<span class="text-sm">📖</span>
+<span class="">Risalah &amp; Kesilapan</span>
+</button>
+<!-- 4. Uji Keyakinan -->
+<button class="sec-nav-btn flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold border border-slate-200 text-slate-700 bg-white hover:bg-slate-50 shrink-0 transition active" id="nav-sec-checklist" onclick="switchPortalSection('sec-checklist')">
+<span class="text-sm">✅</span>
+<span class="">Uji Keyakinan</span>
+</button>
+<!-- 5. Tanda Bahaya -->
+<button class="sec-nav-btn flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold border border-rose-200 text-rose-700 bg-rose-50 hover:bg-rose-100 shrink-0 transition" id="nav-sec-tanda-bahaya" onclick="switchPortalSection('sec-tanda-bahaya')">
+<span class="text-sm">🚨</span>
+<span class="">Tanda Bahaya</span>
+</button>
+<!-- 6. Hubungi / Info -->
+<button class="sec-nav-btn flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold border border-slate-200 text-slate-700 bg-white hover:bg-slate-50 shrink-0 transition" id="nav-sec-maklumat" onclick="switchPortalSection('sec-maklumat')">
+<span class="text-sm">ℹ️</span>
+<span class="">Maklumat HTA</span>
+</button>
+</div>
+</div>
+</div>
+<!-- MAIN VIEWPORT CONTAINER -->
+<main class="max-w-7xl mx-auto px-4 sm:px-6 py-6">
+<!-- ========================================== -->
+<!-- SECTION 1: TEMPAH KAUNSELING & PENDAFTARAN -->
+<!-- ========================================== -->
+<div class="portal-section space-y-6" id="sec-tempah">
+<!-- Top Section Header -->
+<div class="relative bg-gradient-to-br from-white via-sky-50/50 to-teal-50/40 rounded-3xl p-5 sm:p-8 border border-sky-100 shadow-lg">
+<div class="space-y-4">
+<div class="inline-flex items-center gap-2 bg-sky-100 text-sky-800 text-xs font-bold px-3 py-1 rounded-full">
+<svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+            Perkhidmatan Kaunseling Maya Farmasi HTA
+          </div>
+<h2 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-tight">
+            Perlukan Bantuan Menggunakan Inhaler? <br>
+<span class="text-sky-600">Jumpa Pegawai Farmasi Secara Maya!</span>
+</h2>
+<p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Ibu bapa kini tidak perlu hadir semula ke hospital semata-mata untuk demonstrasi ubat. Pegawai Farmasi Hospital Tunku Azizah sedia membimbing anda secara <strong>1-ke-1 dari rumah</strong> mengikut keselesaan masa anda.
+          </p>
+<!-- Schedule Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+<div class="bg-white p-3.5 rounded-2xl border border-slate-200/80 shadow-sm">
+<div class="flex items-center gap-2 text-sky-700 font-bold text-xs sm:text-sm mb-1">
+<span class="material-symbols-outlined text-[18px]">calendar_clock</span>
+<span class="">Waktu Kaunseling Maya</span>
+</div>
+<div class="text-xs text-slate-600 space-y-0.5">
+<p class=""><strong>Hari:</strong> Isnin hingga Jumaat</p>
+<p class=""><strong>Sesi Pagi:</strong> 8:30 AM - 10:00 AM</p>
+<p class=""><strong>Sesi Petang:</strong> 3:00 PM - 4:30 PM</p>
+</div>
+</div>
+<div class="bg-white p-3.5 rounded-2xl border border-slate-200/80 shadow-sm">
+<div class="flex items-center gap-2 text-teal-700 font-bold text-xs sm:text-sm mb-1">
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+<span class="">Format &amp; Platform</span>
+</div>
+<div class="text-xs text-slate-600 space-y-0.5">
+<p class=""><strong>Durasi:</strong> 30 Minit setiap sesi</p>
+<p class=""><strong>Platform:</strong> Google Meet / WhatsApp Video</p>
+<p class=""><strong>Yuran:</strong> PERCUMA untuk pesakit HTA</p>
+</div>
+</div>
+</div>
+<!-- Direct action callouts -->
+<div class="flex flex-col sm:flex-row gap-2.5 pt-2" id="tempah-action-buttons">
+<a class="bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs sm:text-sm px-4 py-3 rounded-xl shadow-md shadow-sky-600/20 flex items-center justify-center gap-2 transition" href="https://docs.google.com/forms/d/e/1FAIpQLSdbc_V0vNJGwOBjQc99oGPHtiqCZVSrxpMwy13WyE7a8-4Cvw/viewform?usp=header" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span class="">1. Isi Borang Pendaftaran</span>
+</a>
+<a class="bg-white hover:bg-slate-50 text-slate-800 font-bold text-xs sm:text-sm px-4 py-3 rounded-xl border border-slate-300 shadow-sm flex items-center justify-center gap-2 transition hover:border-slate-400" href="https://calendar.app.google/gtarUVDkAM463Yxk8" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span class="">2. Pilih Slot Temujanji Maya</span>
+</a>
+</div>
+<p class="text-[11px] text-slate-500 italic">
+            * Nota: Pegawai Farmasi akan menghantar mesej peringatan temujanji menerusi WhatsApp sebelum tarikh sesi maya anda bermula.
+          </p>
+</div>
+</div>
+<!-- Google Form Container Card -->
+
+</div>
+<!-- ========================================== -->
+<!-- SECTION 2: VIDEO TUTORIAL & PANDUAN PANTAS -->
+<!-- ========================================== -->
+<div class="portal-section space-y-6" id="sec-video">
+<div class="text-center max-w-2xl mx-auto space-y-1 pb-1">
+<span class="text-xs font-bold uppercase tracking-wider text-sky-600 bg-sky-50 px-3 py-1 rounded-full border border-sky-100">Panduan Visual Rasmi</span>
+<h2 class="text-xl sm:text-2xl font-black text-slate-900">
+          Cara Guna Inhaler bersama Spacer dengan Corong Muka
+        </h2>
+<p class="text-xs text-slate-600">Disediakan oleh Program Perkhidmatan Farmasi, Kementerian Kesihatan Malaysia.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<!-- Video Box -->
+<div class="lg:col-span-8 bg-slate-900 rounded-3xl overflow-hidden shadow-xl border border-slate-800">
+<div class="relative w-full aspect-video bg-black">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class="absolute inset-0 w-full h-full" frameborder="0" src="https://www.youtube-nocookie.com/embed/CeXpwhD1-eU?rel=0" title="Cara Guna Spacer dengan Corong Muka (Face Mask) yang Betul | Teknik Penggunaan Inhaler">
+</iframe>
+</div>
+<div class="p-3 sm:p-4 bg-slate-900 text-white flex items-center justify-between gap-3 text-xs">
+<div>
+<div class="font-bold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-rose-500"></span>
+                Cara Guna Spacer dengan Corong Muka
+              </div>
+<div class="text-[11px] text-slate-400">Bahagian Amalan &amp; Perkembangan Farmasi KKM</div>
+</div>
+<a class="text-sky-400 hover:text-sky-300 underline font-semibold text-xs shrink-0" href="https://youtu.be/CeXpwhD1-eU" rel="noopener noreferrer" target="_blank">Buka di YouTube ↗</a>
+</div>
+</div>
+<!-- 5 Steps Card -->
+<div class="lg:col-span-4 space-y-3">
+<div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm space-y-2.5">
+<h3 class="text-sm font-bold text-slate-900 flex items-center gap-2">
+<span class="w-5 h-5 rounded-md bg-sky-100 text-sky-700 flex items-center justify-center text-xs font-bold">✓</span>
+              Ringkasan Langkah Utama
+            </h3>
+<div class="space-y-2 text-xs text-slate-600">
+<div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+<strong class="text-slate-900 block">1. Sedia &amp; Goncang:</strong>
+                Tanggalkan penutup inhaler, goncang inhaler 5 saat.
+              </div>
+<div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+<strong class="text-slate-900 block">2. Sambung ke Spacer:</strong>
+                Masukkan corong inhaler ke bukaan getah spacer secara tegak.
+              </div>
+<div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+<strong class="text-slate-900 block">3. Rapatkan Corong Muka:</strong>
+                Pastikan kedap udara di hidung dan mulut anak.
+              </div>
+<div class="p-2.5 rounded-xl bg-amber-50 border border-amber-200 text-amber-900">
+<strong class="block">4. Tekan SATU Pam Sahaja:</strong>
+                Tekan 1 pam. Biarkan anak bernafas tenang 5-6 kali nafas.
+              </div>
+<div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+<strong class="text-slate-900 block">5. Jarak Masa Pam Kedua:</strong>
+                Tunggu 30-60 saat sebelum ulangi jika doktor arahkan dos kedua.
+              </div>
+</div>
+</div>
+<div class="bg-gradient-to-br from-teal-50 to-emerald-50 rounded-2xl p-3.5 border border-teal-200/80 text-teal-900 text-xs space-y-1">
+<div class="font-bold flex items-center gap-1.5 text-teal-800">
+<span class="material-symbols-outlined text-[16px]">lightbulb</span>
+              Tips Penting</div>
+<p class="">
+              Jangan beri ubat semasa anak menangis teresak-esak! Tangisan menyebabkan nafas pendek dan ubat tidak dapat sampai ke paru-paru. Tenangkan anak terlebih dahulu.
+            </p>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- SECTION 3: RISALAH PENGGUNAAN INHALER      -->
+<!-- ========================================== -->
+<div class="portal-section space-y-6" id="sec-panduan">
+<div class="text-center max-w-2xl mx-auto space-y-1">
+<span class="text-xs font-bold uppercase tracking-wider text-teal-600 bg-teal-50 px-3 py-1 rounded-full border border-teal-100">Risalah Interaktif</span>
+<h2 class="text-xl sm:text-2xl font-black text-slate-900">
+          Panduan Penggunaan Inhaler &amp; Spacer
+        </h2>
+<p class="text-xs text-slate-600">Pilih subtopik di bawah untuk membaca keterangan terperinci.</p>
+</div>
+<!-- Tab Navigation for Pamphlet -->
+<div class="flex flex-wrap sm:flex-nowrap items-center justify-center gap-1.5 p-1.5 bg-slate-200/80 rounded-2xl max-w-2xl mx-auto text-xs font-bold"><button class="tab-btn px-3.5 py-2 rounded-xl transition active bg-sky-600 text-white" id="btn-tab-kenali" onclick="switchTab('tab-kenali')">
+          Kenali Ubat &amp; Spacer
+        </button>
+<button class="tab-btn px-3.5 py-2 rounded-xl transition text-slate-700" id="btn-tab-langkah" onclick="switchTab('tab-langkah')">
+          Langkah Penggunaan
+        </button>
+<button class="tab-btn px-3.5 py-2 rounded-xl transition text-slate-700" id="btn-tab-kesilapan" onclick="switchTab('tab-kesilapan')">
+          Kesilapan Lazim
+        </button>
+<button class="tab-btn px-3.5 py-2 rounded-xl transition text-slate-700" id="btn-tab-penjagaan" onclick="switchTab('tab-penjagaan')">
+          Pembersihan
+        </button></div>
+<!-- TAB: Kesilapan Lazim (Shown first) -->
+<div class="tab-pane space-y-4 hidden" id="tab-kesilapan">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+<div class="bg-rose-50/80 border border-rose-200 rounded-2xl p-4 space-y-1.5 text-rose-900">
+<div class="flex items-center gap-2 font-bold text-rose-700 text-xs sm:text-sm">
+<span class="w-5 h-5 rounded-full bg-rose-200 text-rose-800 flex items-center justify-center text-xs font-black">✕</span>
+              Menekan Beberapa Pam Sekaligus (Multi-puffing)
+            </div>
+<p class="text-xs text-slate-700">
+              Menekan 2 atau 3 pam serentak menyebabkan titisan ubat berlanggar dan melekat pada dinding spacer, menyebabkan anak tidak mendapat dos yang mencukupi.
+            </p>
+</div>
+<div class="bg-rose-50/80 border border-rose-200 rounded-2xl p-4 space-y-1.5 text-rose-900">
+<div class="flex items-center gap-2 font-bold text-rose-700 text-xs sm:text-sm">
+<span class="w-5 h-5 rounded-full bg-rose-200 text-rose-800 flex items-center justify-center text-xs font-black">✕</span>
+              Memberi Ubat Semasa Anak Menangis Teresak-esak
+            </div>
+<p class="text-xs text-slate-700">
+              Semasa menangis, hembusan nafas kuat manakala tarikan nafas terlalu cetek. Hampir tiada ubat yang sempat memasuki saluran paru-paru bawah.
+            </p>
+</div>
+<div class="bg-rose-50/80 border border-rose-200 rounded-2xl p-4 space-y-1.5 text-rose-900">
+<div class="flex items-center gap-2 font-bold text-rose-700 text-xs sm:text-sm">
+<span class="w-5 h-5 rounded-full bg-rose-200 text-rose-800 flex items-center justify-center text-xs font-black">✕</span>
+              Menyedut Terlalu Laju (Bunyi Wisel AeroChamber)
+            </div>
+<p class="text-xs text-slate-700">
+              Jika spacer berbunyi wisel, itu tanda sedutan terlalu deras. Ubat akan terhempas pada tekak dan mulut, bukan masuk ke cabang bronkus paru-paru.
+            </p>
+</div>
+<div class="bg-rose-50/80 border border-rose-200 rounded-2xl p-4 space-y-1.5 text-rose-900">
+<div class="flex items-center gap-2 font-bold text-rose-700 text-xs sm:text-sm">
+<span class="w-5 h-5 rounded-full bg-rose-200 text-rose-800 flex items-center justify-center text-xs font-black">✕</span>
+              Menggosok &amp; Mengelap Kering Bahagian Dalam Spacer
+            </div>
+<p class="text-xs text-slate-700">
+              Mengelap dengan tuala atau tisu menghasilkan cas elektrostatik tinggi yang akan memerangkap zarah ubat pada dinding spacer untuk berhari-hari.
+            </p>
+</div>
+</div>
+<div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 space-y-2">
+<h4 class="text-xs sm:text-sm font-bold text-amber-900 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-amber-600 text-[18px]">warning</span>
+            Akibat Penggunaan Inhaler yang Salah:
+          </h4>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs text-slate-700">
+<div class="bg-white p-3 rounded-xl border border-amber-100">
+<strong>Simptom Sukar Kawal:</strong> Asma lambat reda, batuk malam berulang, dan sesak nafas kerap datang semula.
+            </div>
+<div class="bg-white p-3 rounded-xl border border-amber-100">
+<strong>Kemasukan Semula ED:</strong> Risiko tinggi serangan asma berulang dan terpaksa berulang-alik ke Jabatan Kecemasan.
+            </div>
+<div class="bg-white p-3 rounded-xl border border-amber-100">
+<strong>Menjejaskan Kualiti Hidup:</strong> Gangguan tidur anak &amp; ibu bapa, ponteng sekolah, dan kebimbangan berterusan.
+            </div>
+</div>
+</div>
+</div>
+<!-- TAB: Kenali Ubat & Spacer -->
+<div class="tab-pane space-y-4" id="tab-kenali">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-white rounded-2xl p-5 border-2 border-sky-200 shadow-sm space-y-3 relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-sky-600 text-white text-[10px] font-black uppercase px-2.5 py-0.5 rounded-bl-lg">
+              Dibekalkan di ED
+            </div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center font-black text-sm">
+                MDI
+              </div>
+<div>
+<span class="text-[10px] font-bold text-sky-600 uppercase">Inhaler Pelega (Reliever)</span>
+<h3 class="text-base font-bold text-slate-900">Salbutamol (Warna Biru)</h3>
+</div>
+</div>
+<p class="text-xs text-slate-600">
+              Bertindak membuka dan merehatkan otot saluran pernafasan yang mengecut semasa serangan asma akut.
+            </p>
+<div class="bg-sky-50 rounded-xl p-3 text-xs text-sky-900 border border-sky-100">
+<strong>Gunakan semasa sesak nafas</strong> mengikut dos doktor (biasanya 2 pam, sedut satu demi satu).
+            </div>
+</div>
+<div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-black text-sm">
+                ICS
+              </div>
+<div>
+<span class="text-[10px] font-bold text-amber-600 uppercase">Inhaler Pencegah (Preventer)</span>
+<h3 class="text-base font-bold text-slate-900">Kortikosteroid (Coklat/Jingga)</h3>
+</div>
+</div>
+<p class="text-xs text-slate-600">
+              Merawat bengkak dan keradangan saluran pernafasan secara berterusan bagi mencegah serangan asma pada masa hadapan.
+            </p>
+<div class="bg-amber-50 rounded-xl p-3 text-xs text-amber-900 border border-amber-100">
+              Perlu digunakan <strong>setiap hari mengikut jadual</strong>. Lap muka dan minum air selepas sedutan.
+            </div>
+</div>
+</div>
+<div class="bg-gradient-to-r from-teal-900 to-sky-900 text-white rounded-2xl p-5 shadow-md">
+<div class="space-y-2">
+<span class="text-[10px] font-bold uppercase tracking-wider text-teal-300 bg-teal-800/80 px-2 py-0.5 rounded">Aksesori Penting</span>
+<h3 class="text-base sm:text-lg font-bold">Mengapa Kanak-Kanak Wajib Menggunakan Spacer?</h3>
+<p class="text-xs text-sky-100 leading-relaxed">
+              Tanpa spacer, <strong>sehingga 80% dos ubat hanya terperangkap di tekak dan lidah</strong>, lalu tertelan ke dalam perut tanpa sempat sampai ke paru-paru. Spacer memperlahankan zarah semburan aerosol agar mudah disedut dengan tenang.
+            </p>
+</div>
+</div>
+</div>
+<!-- TAB: Langkah Lengkap -->
+<div class="tab-pane space-y-4 hidden" id="tab-langkah">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+<div class="bg-white p-3.5 rounded-xl border border-slate-200 space-y-1">
+<span class="text-xs font-black text-sky-600">Langkah 01</span>
+<h4 class="text-xs font-bold text-slate-900">Buka &amp; Periksa</h4>
+<p class="text-[11px] text-slate-600">Buka penutup dan periksa corong inhaler serta ruang spacer dari habuk/benda asing.</p>
+</div>
+<div class="bg-white p-3.5 rounded-xl border border-slate-200 space-y-1">
+<span class="text-xs font-black text-sky-600">Langkah 02</span>
+<h4 class="text-xs font-bold text-slate-900">Goncang 5 Saat</h4>
+<p class="text-[11px] text-slate-600">Goncang inhaler secara menegak sekurang-kurangnya 5 saat agar ubat bergaul mesra.</p>
+</div>
+<div class="bg-white p-3.5 rounded-xl border border-slate-200 space-y-1">
+<span class="text-xs font-black text-sky-600">Langkah 03</span>
+<h4 class="text-xs font-bold text-slate-900">Pasang ke Spacer</h4>
+<p class="text-[11px] text-slate-600">Masukkan inhaler ke soket getah spacer dengan kedudukan botol menegak ke atas.</p>
+</div>
+<div class="bg-white p-3.5 rounded-xl border border-slate-200 space-y-1">
+<span class="text-xs font-black text-sky-600">Langkah 04</span>
+<h4 class="text-xs font-bold text-slate-900">Tekup Corong Muka</h4>
+<p class="text-[11px] text-slate-600">Tekup face mask menutupi hidung &amp; mulut anak secara rapat tanpa ada celah udara.</p>
+</div>
+<div class="bg-white p-3.5 rounded-xl border-2 border-amber-300 bg-amber-50/50 space-y-1">
+<span class="text-xs font-black text-amber-600">Langkah 05</span>
+<h4 class="text-xs font-bold text-slate-900">Tekan 1 Kali Sahaja</h4>
+<p class="text-[11px] text-slate-600">Tekan inhaler 1 PAM sahaja ke dalam spacer. Jangan tekan 2-3 kali serentak!</p>
+</div>
+<div class="bg-white p-3.5 rounded-xl border border-slate-200 space-y-1">
+<span class="text-xs font-black text-sky-600">Langkah 06</span>
+<h4 class="text-xs font-bold text-slate-900">Sedut 5-6 Nafas</h4>
+<p class="text-[11px] text-slate-600">Biarkan anak bernafas santai 5 hingga 6 nafas perlahan melalui corong muka.</p>
+</div>
+</div>
+<div class="p-3 bg-sky-50 border border-sky-200 rounded-xl text-xs text-sky-900">
+          ⏱️ <strong>Perlu pam kedua?</strong> Tunggu antara <strong>30-60 saat</strong>, kemudian goncang semula dan ulangi langkah untuk dos seterusnya.
+        </div>
+</div>
+<!-- TAB: Pembersihan -->
+<div class="tab-pane space-y-4 hidden" id="tab-penjagaan">
+<div class="bg-white rounded-2xl p-5 border border-slate-200 space-y-3">
+<h4 class="text-sm font-bold text-slate-900">Cara Cuci Spacer Seminggu Sekali</h4>
+<div class="grid grid-cols-1 sm:grid-cols-4 gap-3 text-xs text-slate-700">
+<div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+<strong class="text-slate-900 block mb-1">1. Leraikan</strong>
+              Tanggalkan penutup, injap getah belakang dan corong muka.
+            </div>
+<div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+<strong class="text-slate-900 block mb-1">2. Rendam Sabun</strong>
+              Rendam 15 minit dalam air suam dengan sedikit cecair pencuci pinggan lembut.
+            </div>
+<div class="p-3 bg-amber-50 rounded-xl border border-amber-200 text-amber-900">
+<strong class="block mb-1">3. Jangan Bilas!</strong>
+              Biarkan lapisan buih sabun tipis kekal untuk cegah cas elektrostatik.
+            </div>
+<div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+<strong class="text-slate-900 block mb-1">4. Kering Sendiri</strong>
+              Keringkan di udara secara menegak. JANGAN lap dengan kain tuala atau tisu.
+            </div>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- SECTION 4: UJI KEYAKINAN (8 LANGKAH)       -->
+<!-- ========================================== -->
+<div class="portal-section space-y-6 active" id="sec-checklist">
+<div class="bg-white rounded-3xl p-5 sm:p-8 border border-slate-200 shadow-md space-y-5">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
+<div>
+
+<h2 class="text-lg sm:text-xl font-black text-slate-900">
+              Uji Tahap Keyakinan &amp; Teknik Inhaler Anda
+            </h2>
+<p class="text-xs text-slate-600">
+              Tandakan amalan anda untuk mengira skor penguasaan teknik spacer.
+            </p>
+</div>
+<div class="p-3 bg-slate-50 rounded-2xl border border-slate-200 text-center shrink-0 min-w-[130px]">
+<div class="text-[11px] font-semibold text-slate-500">Skor Anda</div>
+<div class="text-2xl font-black text-sky-600" id="scoreDisplay">0 / 8</div>
+<div class="text-[10px] font-bold text-slate-500 mt-0.5" id="scoreStatus">Belum lengkap</div>
+</div>
+</div>
+<!-- 8 Steps -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+<label class="flex items-start gap-2.5 p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition select-none">
+<input class="chk-step mt-0.5 w-4 h-4 rounded text-sky-600 focus:ring-sky-500 border-slate-300" onchange="updateChecklist()" type="checkbox">
+<span class="text-xs text-slate-700">
+<strong>1. Buka &amp; Periksa:</strong> Membuka penutup MDI dan spacer serta memeriksa tiada habuk atau objek bendasing di dalamnya.
+            </span>
+</label>
+<label class="flex items-start gap-2.5 p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition select-none">
+<input class="chk-step mt-0.5 w-4 h-4 rounded text-sky-600 focus:ring-sky-500 border-slate-300" onchange="updateChecklist()" type="checkbox">
+<span class="text-xs text-slate-700">
+<strong>2. Goncang 5 Saat:</strong> Menggoncang kanister MDI dengan tegak sekurang-kurangnya 5 saat sebelum disambungkan.
+            </span>
+</label>
+<label class="flex items-start gap-2.5 p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition select-none">
+<input class="chk-step mt-0.5 w-4 h-4 rounded text-sky-600 focus:ring-sky-500 border-slate-300" onchange="updateChecklist()" type="checkbox">
+<span class="text-xs text-slate-700">
+<strong>3. Sambungan Tegak:</strong> Memasukkan inhaler ke bukaan getah spacer secara kemas dan menegak.
+            </span>
+</label>
+<label class="flex items-start gap-2.5 p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition select-none">
+<input class="chk-step mt-0.5 w-4 h-4 rounded text-sky-600 focus:ring-sky-500 border-slate-300" onchange="updateChecklist()" type="checkbox">
+<span class="text-xs text-slate-700">
+<strong>4. Hembus Lembut:</strong> Mengajak anak menghembus nafas keluar perlahan-lahan sebelum menekup corong muka.
+            </span>
+</label>
+<label class="flex items-start gap-2.5 p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition select-none">
+<input class="chk-step mt-0.5 w-4 h-4 rounded text-sky-600 focus:ring-sky-500 border-slate-300" onchange="updateChecklist()" type="checkbox">
+<span class="text-xs text-slate-700">
+<strong>5. Tekup Rapat:</strong> Menekup face mask menutupi hidung &amp; mulut dengan kedap tanpa celah di pipi.
+            </span>
+</label>
+<label class="flex items-start gap-2.5 p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition select-none">
+<input class="chk-step mt-0.5 w-4 h-4 rounded text-sky-600 focus:ring-sky-500 border-slate-300" onchange="updateChecklist()" type="checkbox">
+<span class="text-xs text-slate-700">
+<strong>6. Satu Pam Sahaja:</strong> Menekan kanister MDI hanya SATU KALI untuk melepaskan 1 semburan dos.
+            </span>
+</label>
+<label class="flex items-start gap-2.5 p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition select-none">
+<input class="chk-step mt-0.5 w-4 h-4 rounded text-sky-600 focus:ring-sky-500 border-slate-300" onchange="updateChecklist()" type="checkbox">
+<span class="text-xs text-slate-700">
+<strong>7. Bernafas 5-6 Kali:</strong> Membiarkan anak bernafas tenang 5-6 kali (memerhatikan injap bergerak).
+            </span>
+</label>
+<label class="flex items-start gap-2.5 p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition select-none">
+<input class="chk-step mt-0.5 w-4 h-4 rounded text-sky-600 focus:ring-sky-500 border-slate-300" onchange="updateChecklist()" type="checkbox">
+<span class="text-xs text-slate-700">
+<strong>8. Rehat 30-60 Saat:</strong> Menunggu sekurang-kurangnya 30 saat sebelum memulakan pam kedua jika diarahkan doktor.
+            </span>
+</label>
+</div>
+<!-- Result Box -->
+<div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs" id="checklistFeedback">
+<div class="text-slate-700">
+<strong>Nasihat Farmasi:</strong> <span id="feedbackText" class="">Sila tandakan langkah yang anda amalkan di atas.</span>
+</div>
+<button class="bg-sky-600 hover:bg-sky-700 text-white font-bold px-3.5 py-1.5 rounded-xl shrink-0 transition" id="feedbackCta" onclick="switchPortalSection('sec-tempah')">Daftar Kaunseling Maya →</button>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- SECTION 5: TANDA-TANDA BAHAYA (KECEMASAN)  -->
+<!-- ========================================== -->
+<div class="portal-section space-y-6" id="sec-tanda-bahaya">
+<div class="bg-gradient-to-br from-rose-900 via-rose-800 to-red-900 text-white rounded-3xl p-5 sm:p-8 shadow-xl relative overflow-hidden space-y-4">
+<div class="inline-flex items-center gap-2 bg-rose-700/80 text-rose-100 text-xs font-bold px-3 py-1 rounded-full border border-rose-600">
+<span class="w-2 h-2 rounded-full bg-rose-300 animate-ping"></span>
+          Kecemasan Akut Pediatrik
+        </div>
+<div class="space-y-1">
+<h2 class="text-xl sm:text-2xl font-black tracking-tight">
+            Bila Perlu Bawa Anak ke Kecemasan Serta-Merta?
+          </h2>
+<p class="text-xs sm:text-sm text-rose-100 leading-relaxed max-w-2xl">
+            Inhaler di rumah adalah untuk kelegaan serangan biasa. Jika anak menunjukkan tanda amaran ini, <strong>JANGAN TUNGGU SESI KAUNSELING MAYA</strong>. Berikan 2-4 semburan Salbutamol segera dan terus bawa ke Jabatan Kecemasan.
+          </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-1"><div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/20 flex items-start gap-2.5"><div class="w-6 h-6 rounded-lg bg-rose-600 text-white font-black flex items-center justify-center text-xs shrink-0 mt-0.5">!</div><div class="space-y-0.5"><h3 class="font-bold text-xs sm:text-sm text-white leading-tight">Nafas Sangat Laju &amp; Berombak</h3><p class="text-[11px] text-rose-100 leading-snug">Hidung kembang kempis atau dada/tulang rusuk tertarik ke dalam (chest indrawing).</p></div></div><div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/20 flex items-start gap-2.5"><div class="w-6 h-6 rounded-lg bg-rose-600 text-white font-black flex items-center justify-center text-xs shrink-0 mt-0.5">!</div><div class="space-y-0.5"><h3 class="font-bold text-xs sm:text-sm text-white leading-tight">Bibir / Kuku Kebiruan atau Pucat</h3><p class="text-[11px] text-rose-100 leading-snug">Tahap oksigen sangat rendah dan memerlukan bekalan oksigen kecemasan segera.</p></div></div><div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/20 flex items-start gap-2.5"><div class="w-6 h-6 rounded-lg bg-rose-600 text-white font-black flex items-center justify-center text-xs shrink-0 mt-0.5">!</div><div class="space-y-0.5"><h3 class="font-bold text-xs sm:text-sm text-white leading-tight">Sukar Bercakap / Tidak Menyusu</h3><p class="text-[11px] text-rose-100 leading-snug">Anak tidak mampu bercakap sepatah ayat penuh atau bayi tercungap ketika menyusu.</p></div></div><div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/20 flex items-start gap-2.5"><div class="w-6 h-6 rounded-lg bg-rose-600 text-white font-black flex items-center justify-center text-xs shrink-0 mt-0.5">!</div><div class="space-y-0.5"><h3 class="font-bold text-xs sm:text-sm text-white leading-tight">Lesu &amp; Tiada Tindak Balas</h3><p class="text-[11px] text-rose-100 leading-snug">Anak amat mengantuk, lemah longlai, atau Salbutamol tidak lagi memberi kelegaan.</p></div></div></div>
+<div class="p-3.5 bg-rose-950/70 rounded-2xl border border-rose-700/50 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+<span class="text-rose-200">
+<strong>Talian Kecemasan Malaysia:</strong> Hubungi <strong>999</strong> jika tiada kenderaan segera.
+          </span>
+<span class="text-white font-bold bg-rose-800 px-3 py-1.5 rounded-lg border border-rose-600">
+            Jabatan Kecemasan HTA: 24 Jam
+          </span>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- SECTION 6: MAKLUMAT PROJEK & HUBUNGI KAMI  -->
+<!-- ========================================== -->
+<div class="portal-section space-y-6" id="sec-maklumat">
+<div class="bg-slate-100 rounded-3xl p-5 sm:p-8 border border-slate-200 text-slate-700 space-y-4">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<div class="lg:col-span-8 space-y-2.5">
+<div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Inisiatif Kualiti Perkhidmatan Kesihatan HTA</div>
+<h2 class="text-base sm:text-lg font-black text-slate-900 leading-tight">
+              Penambahbaikan Akses kepada Kaunseling Inhaler bagi Pesakit Pediatrik di Jabatan Kecemasan HTA Selepas Waktu Pejabat melalui Kaunseling Maya
+            </h2>
+<p class="text-xs text-slate-600 leading-relaxed">
+              Inisiatif ini diterajui oleh <strong>Jabatan Farmasi bersama Jabatan Kecemasan &amp; Trauma Hospital Tunku Azizah (HTA)</strong> untuk merapatkan jurang kaunseling pesakit luar waktu pejabat. Projek ini bertujuan meningkatkan teknik penggunaan ubat sedut, memperkasa ibu bapa, dan mengurangkan kemasukan semula pesakit ke hospital.
+            </p>
+<div class="flex flex-wrap gap-2 pt-2 text-xs">
+<span class="bg-white px-2.5 py-1 rounded-lg border border-slate-200 font-semibold text-slate-700">Kaunseling Maya Pediatrik</span>
+<a class="bg-emerald-50 text-emerald-800 border border-emerald-200 px-3 py-1 rounded-lg font-semibold hover:bg-emerald-100 transition flex items-center gap-1" href="https://linktr.ee/kaunseling.hta" rel="noopener noreferrer" target="_blank">
+<span class="">Linktree: @kaunseling.hta</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+</div>
+<div class="lg:col-span-4 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm space-y-2">
+<h3 class="text-xs font-bold text-slate-900 border-b pb-1.5">Hubungi Farmasi HTA</h3>
+<div class="text-xs space-y-1.5 text-slate-600">
+<p class=""><strong>Lokasi:</strong> Farmasi Klinik Pakar, Hospital Tunku Azizah (Hospital Wanita &amp; Kanak-kanak Kuala Lumpur)</p>
+<p class=""><strong>Waktu Kaunter:</strong> 8:00 PG - 5:00 PTG (Hari Bekerja)</p>
+<p class=""><strong>Telefon:</strong> 03-2600 3000 (samb. 1622 / 1617)</p>
+<p class=""><strong>Kaunseling Maya:</strong> Isnin - Jumaat (Slot 8:30-10:00 PG &amp; 3:00-4:30 PTG)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- FOOTER -->
+<footer class="bg-slate-950 text-slate-400 py-8 border-t border-slate-800 text-xs">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-6">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pb-6 border-b border-slate-800">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-sky-600 text-white flex items-center justify-center font-black text-xs">
+            HTA
+          </div>
+<div>
+<div class="text-white font-bold text-xs">Hospital Tunku Azizah (HTA)</div>
+<div class="text-slate-500 text-[10px]">Kementerian Kesihatan Malaysia (KKM)</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-3 text-[11px] font-semibold text-slate-400">
+<button class="hover:text-white transition" onclick="switchPortalSection('sec-tempah')">Kaunseling Maya</button>
+<button class="hover:text-white transition" onclick="switchPortalSection('sec-video')">Video Tutorial</button>
+<button class="hover:text-white transition" onclick="switchPortalSection('sec-panduan')">Risalah Inhaler</button>
+<button class="hover:text-white transition" onclick="switchPortalSection('sec-checklist')">Checklist Keyakinan</button>
+<button class="text-rose-400 hover:text-rose-300 transition" onclick="switchPortalSection('sec-tanda-bahaya')">Tanda Bahaya</button>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-500 text-[11px]">
+<div class="">
+          Hak Cipta © 2026 Jabatan Farmasi &amp; Jabatan Kecemasan Hospital Tunku Azizah.
+        </div>
+<div class="text-slate-600 text-center sm:text-right">
+          Pendidikan kesihatan pesakit; bukan pengganti diagnosis kecemasan doktor.
+        </div>
+</div>
+</div>
+</footer>
+<!-- BOTTOM FIXED QUICK NAVIGATION BAR (MOBILE TAP BAR) -->
+<nav aria-label="Menu Pantas Bawah" class="fixed bottom-0 inset-x-0 bg-white/95 backdrop-blur-lg border-t border-slate-200 z-50 py-1 px-2 shadow-2xl">
+<div class="max-w-md mx-auto grid grid-cols-5 gap-1 text-center">
+<button class="b-nav-item flex flex-col items-center justify-center py-1 text-slate-500 transition" id="bnav-sec-tempah" onclick="switchPortalSection('sec-tempah')">
+<span class="material-symbols-outlined text-[20px] b-nav-icon p-1 rounded-full">calendar_month</span>
+<span class="text-[10px] font-semibold mt-0.5">Kaunseling</span>
+</button>
+<button class="b-nav-item flex flex-col items-center justify-center py-1 text-slate-500 transition" id="bnav-sec-video" onclick="switchPortalSection('sec-video')">
+<span class="material-symbols-outlined text-[20px] b-nav-icon p-1 rounded-full">play_circle</span>
+<span class="text-[10px] font-semibold mt-0.5">Video</span>
+</button>
+<button class="b-nav-item flex flex-col items-center justify-center py-1 text-slate-500 transition" id="bnav-sec-panduan" onclick="switchPortalSection('sec-panduan')">
+<span class="material-symbols-outlined text-[20px] b-nav-icon p-1 rounded-full">menu_book</span>
+<span class="text-[10px] font-semibold mt-0.5">Risalah</span>
+</button>
+<button class="b-nav-item flex flex-col items-center justify-center py-1 text-slate-500 transition active" id="bnav-sec-checklist" onclick="switchPortalSection('sec-checklist')">
+<span class="material-symbols-outlined text-[20px] b-nav-icon p-1 rounded-full">fact_check</span>
+<span class="text-[10px] font-semibold mt-0.5">Keyakinan</span>
+</button>
+<button class="b-nav-item flex flex-col items-center justify-center py-1 text-rose-600 transition" id="bnav-sec-tanda-bahaya" onclick="switchPortalSection('sec-tanda-bahaya')">
+<span class="material-symbols-outlined text-[20px] b-nav-icon p-1 rounded-full">emergency</span>
+<span class="text-[10px] font-semibold mt-0.5">Bahaya!</span>
+</button>
+</div>
+</nav>
+<!-- JAVASCRIPT LOGIC -->
+<script>
+    // Master Section Switcher (Reveals target section & hides others)
+    function switchPortalSection(sectionId, focusTarget = null) {
+      // 1. Hide all portal sections
+      document.querySelectorAll('.portal-section').forEach(sec => {
+        sec.classList.remove('active');
+      });
+
+      // 2. Show requested section
+      const targetSec = document.getElementById(sectionId);
+      if (targetSec) {
+        targetSec.classList.add('active');
+      }
+
+      // 3. Update top section pill buttons
+      document.querySelectorAll('.sec-nav-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      const topBtn = document.getElementById('nav-' + sectionId);
+      if (topBtn) {
+        topBtn.classList.add('active');
+        // Ensure pill is scrolled into view smoothly in horizontal scroll container
+        topBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      }
+
+      // 4. Update bottom bar active status
+      document.querySelectorAll('.b-nav-item').forEach(bItem => {
+        bItem.classList.remove('active');
+      });
+      const bNavBtn = document.getElementById('bnav-' + sectionId);
+      if (bNavBtn) {
+        bNavBtn.classList.add('active');
+      }
+
+      // 5. Scroll smoothly up to top of active section container
+      if (targetSec) {
+        const topOffset = 130;
+        const elementPosition = targetSec.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({
+          top: elementPosition - topOffset,
+          behavior: 'smooth'
+        });
+      }
+    }
+
+    // Tab switcher inside Risalah Inhaler section
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-pane').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active', 'bg-sky-600', 'text-white');
+        btn.classList.add('text-slate-700');
+      });
+      const selectedPane = document.getElementById(tabId);
+      if (selectedPane) {
+        selectedPane.classList.remove('hidden');
+      }
+      const activeBtn = document.getElementById('btn-' + tabId);
+      if (activeBtn) {
+        activeBtn.classList.add('active', 'bg-sky-600', 'text-white');
+        activeBtn.classList.remove('text-slate-700');
+      }
+    }
+
+    // Checklist calculator logic
+    function updateChecklist() {
+      const checkboxes = document.querySelectorAll('.chk-step');
+      let checkedCount = 0;
+      checkboxes.forEach(cb => {
+        if (cb.checked) checkedCount++;
+      });
+      const total = checkboxes.length;
+      const scoreDisplay = document.getElementById('scoreDisplay');
+      if (scoreDisplay) scoreDisplay.innerText = `${checkedCount} / ${total}`;
+      const statusEl = document.getElementById('scoreStatus');
+      const feedbackText = document.getElementById('feedbackText');
+      const feedbackBox = document.getElementById('checklistFeedback');
+      if (!statusEl || !feedbackText || !feedbackBox) return;
+
+      if (checkedCount === 0) {
+        statusEl.innerText = "Belum lengkap";
+        statusEl.className = "text-[10px] font-bold text-slate-500 mt-0.5";
+        feedbackText.innerText = "Sila tandakan langkah yang anda amalkan di atas.";
+        feedbackBox.className = "p-3.5 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs";
+      } else if (checkedCount < 5) {
+        statusEl.innerText = "Perlu Bimbingan";
+        statusEl.className = "text-[10px] font-bold text-rose-600 mt-0.5";
+        feedbackText.innerHTML = "<span class='text-rose-600 font-bold'>Perhatian:</span> Beberapa langkah kritikal mungkin tertinggal. Kami amat mengesyorkan anda menempah sesi kaunseling maya percuma bersama Pegawai Farmasi HTA.";
+        feedbackBox.className = "p-3.5 rounded-2xl bg-rose-50 border border-rose-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs";
+      } else if (checkedCount < 8) {
+        statusEl.innerText = "Sederhana Baik";
+        statusEl.className = "text-[10px] font-bold text-amber-600 mt-0.5";
+        feedbackText.innerHTML = "<span class='text-amber-700 font-bold'>Baik:</span> Anda hampir menguasai teknik sepenuhnya. Sila perhatikan langkah seperti 1 pam sahaja dan rehat 30-60 saat antara dos.";
+        feedbackBox.className = "p-3.5 rounded-2xl bg-amber-50 border border-amber-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs";
+      } else {
+        statusEl.innerText = "Cemerlang!";
+        statusEl.className = "text-[10px] font-bold text-emerald-600 mt-0.5";
+        feedbackText.innerHTML = "<span class='text-emerald-700 font-bold'>Tahniah!</span> Anda menguasai semua 8 teknik kritikal penggunaan inhaler dan spacer. Teruskan amalan terbaik ini demi kesihatan nafas anak anda.";
+        feedbackBox.className = "p-3.5 rounded-2xl bg-emerald-50 border border-emerald-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs";
+      }
+    }
+  </script>
+
+
+</body></html>
